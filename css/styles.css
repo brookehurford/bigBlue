@@ -63,7 +63,6 @@ nav {
 nav ul {
   list-style: none;
   padding-left: 3.5em;
-  background-color: #EEEEEE;
   margin: 0 auto;
 }
 
@@ -165,21 +164,32 @@ nav li {
 
   .header {
     position: absolute;
-    width: 175px;
+    width: 200px;
     top: 5%;
     left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
   }
 
   .header img {
     margin: 0 2em;
+    /*border: 1px solid red;*/
+    min-width: 75px;
+  }
+
+  nav {
+    background-color: transparent;
+    padding: 0;
   }
 
   nav ul {
-    padding-left: 2em;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
   }
 
   nav li {
     float: none;
+    /*font-size: 12px;*/
     text-align: left;
     margin: .5em;
   }
@@ -188,11 +198,9 @@ nav li {
     height: 64.6vh;
   }
 
-  /*.mainContent img {
-    width: 100%;
-    height: 65vh;
-    object-fit: cover;
-  }*/
+  .location {
+    top: 85%;
+  }
 
   .subContent {
     height: 20vh;
