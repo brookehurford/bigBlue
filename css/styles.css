@@ -110,8 +110,6 @@ nav li {
 /*--------- Sub Content ------------*/
 
 .subContent1, .subContent2{
-  min-height: 220px;
-  height: 37vh;
   width: 100%;
   margin-top: 18px;
   overflow: auto;
@@ -292,7 +290,7 @@ nav li {
   .subContent1 {
     float: left;
     width: 49%;
-    height: 33.6vh;
+    height: 33.8vh;
   }
 
   .sub1Text p {
@@ -306,7 +304,7 @@ nav li {
   .subContent2 {
     float: right;
     width: 49%;
-    height: 33.6vh;
+    height: 33.8vh;
   }
 
   .subContent2 img {
@@ -345,7 +343,7 @@ nav li {
   .subContent1 {
     margin-top: 0;
     width: 100%;
-    height: 49%;
+    height: 50%;
   }
 
   .sub1Text p {
@@ -358,7 +356,7 @@ nav li {
 
   .subContent2 {
     width: 100%;
-    height: 49%;
+    height: 50%;
   }
 
   .subContent2 p {
