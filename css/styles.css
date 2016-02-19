@@ -46,6 +46,10 @@ body {
   margin-top: 1em;
 }
 
+.header .black {
+  display: none;
+}
+
 .header img {
   max-width: 30%;
   display: block;
@@ -117,6 +121,10 @@ nav li {
 
 /* Sub Content 1 */
 
+.mobileHeading {
+  display: none;
+}
+
 .subContent1 {
   text-align: center;
   text-transform: uppercase;
@@ -134,6 +142,7 @@ nav li {
 
 .subContent1 h2 {
   font-family: 'Patua One', cursive;
+  letter-spacing: 1.5px;
 }
 
 /* Sub Content 2 */
@@ -166,8 +175,31 @@ nav li {
 
   .header .white {
     width: 100%;
-
   }
+
+  .subContent1 {
+    min-height: 0px;
+    height: 6vh;
+    overflow: hidden;
+    padding-top: .7em;
+  }
+
+  .mobileHeading {
+    display: block;
+    text-align: left;
+  }
+
+  .sub1Text {
+    display: none;
+  }
+
+  .subContent2 {
+    min-height: 0px;
+    height: 15vh;
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+
 }
 
 @media only screen and (min-width: 619px) {
@@ -187,8 +219,15 @@ nav li {
 
   .header img {
     margin: 0 2em;
-    /*border: 1px solid red;*/
     min-width: 75px;
+  }
+
+  .header .black {
+    display: block;
+  }
+
+  .header .white {
+    display: none;
   }
 
   nav {
@@ -239,36 +278,17 @@ nav li {
   }
 
   .subContent2 p {
-    font-size: 12px;
-  }
-
-  .hidden {
-    display: none;
+    font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 1100px) {
-
-  .wrapper {
-    /*border: 1px solid green;*/
-  }
 
   .mainContent {
     float: left;
     width: 70%;
     height: 100vh;
     display: block;
-  }
-
-  .subContent1 {
-    margin-top: 0;
-    width: 100%;
-    height: 49%;
-  }
-
-  .subContent2 {
-    width: 100%;
-    height: 49%;
   }
 
   .subContent {
@@ -278,5 +298,29 @@ nav li {
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
+  }
+
+  .subContent1 {
+    margin-top: 0;
+    width: 100%;
+    height: 49%;
+  }
+
+  .sub1Text p {
+    font-size: 16px;
+  }
+
+  .sub1Text h2 {
+    font-size: 30px;
+  }
+
+  .subContent2 {
+    width: 100%;
+    height: 49%;
+  }
+
+  .subContent2 p {
+    font-size: 16px;
+    line-height: 30px;
   }
 }
