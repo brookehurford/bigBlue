@@ -15,7 +15,7 @@
   height: 100%;
 }*/
 
-body {
+html, body {
   margin: 0px;
 }
 
@@ -32,18 +32,17 @@ body {
   font-family: 'Arimo', sans-serif;
 }
 
-/*--------- Navigation ------------*/
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+/*--------- Header / Navigation ------------*/
 
 .header {
   background-color: white;
   margin-top: 1em;
-}
-
-nav {
-  background-color: #EEEEEE;
-  overflow: auto;
-  padding: .8em 0;
-  clear: both;
 }
 
 .header img {
@@ -52,6 +51,13 @@ nav {
   padding: .7em 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+nav {
+  background-color: #EEEEEE;
+  overflow: auto;
+  padding: .8em 0;
+  clear: both;
 }
 
 nav ul {
@@ -67,49 +73,134 @@ nav li {
   font-size: 12px;
 }
 
-.wrapper {
-  width: 95%;
-  margin: 0 auto;
-  overflow: auto;
-}
+/*--------- Header / Navigation ------------*/
 
-.mainContent {
+/*.mainContent {
   clear: both;
   overflow: auto;
+  overflow: hidden;
   display: block;
+  border: 1px solid red;
+  margin: 0px;
+  padding: 0px;
+  height: 50vh;
+}*/
+
+.mainContent {
+  background-image: url("../img/kohtao.jpg");
+  height: 40vh;
+  background-size: cover;
 }
 
-.mainContent img {
+/*.mainContent img {
   width: 100%;
+  height: 40vh;
   object-fit: cover;
+}*/
+
+.location {
+  position: relative;
+  top: 75%;
+  left: 10%;
 }
+
+.location p {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 18px;
+  line-height: 5px;
+}
+
+.location p:nth-child(2) {
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 14px;
+}
+
+/*--------- Sub Content ------------*/
 
 .subContent1, .subContent2{
-  height: 150px;
+  min-height: 220px;
+  height: 33.2vh;
   width: 100%;
   margin-top: 18px;
   overflow: auto;
+  background-color: white;
+  padding: 1em;
 }
+
+/* Sub Content 1 */
+
+.subContent1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subContent1 p {
+  font-size: 12px;
+}
+
+.subContent1 h2 {
+  font-family: 'Patua One', cursive;
+}
+
+/* Sub Content 1 */
+
+.subContent2 p {
+  font-size: 14px;
+  letter-spacing: .2px;
+}
+
 
 /* MEDIA QUERIES
 ======================*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 619px) {
 
-  .subContent {
-    height: 50vh;
+  .wrapper {
+    width: 100%;
   }
+
+  .header {
+    position: absolute;
+    width: 175px;
+    top: 5%;
+    left: 10%;
+  }
+
+  .header img {
+    margin: 0 2em;
+  }
+
+  nav ul {
+    padding-left: 2em;
+  }
+
+  nav li {
+    float: none;
+    text-align: left;
+    margin: .5em;
+  }
+
+  .mainContent img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+  }
+
+  /*.subContent {
+    height: 50vh;
+  }*/
 
   .subContent1 {
     float: left;
     width: 49%;
-    height: 90%;
   }
 
   .subContent2{
     float: right;
     width: 49%;
-    height: 90%;
   }
 }
 
